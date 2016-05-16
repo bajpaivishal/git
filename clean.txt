@@ -1,0 +1,24 @@
+git clean
+// removes untracked files from your working directory
+/*
+The git clean command is often executed in conjunction with git reset --hard. Remember that resetting only affects tracked files, so a separate command is required for cleaning up untracked ones. Combined, these two commands let you return the working directory to the exact state of a particular commit.
+*/
+
+git clean -n 
+// only msg :: Perform a “dry run” of git clean. This will show you which files are going to be removed without actually doing it.
+
+git clean -f
+// cwd & not subdir
+
+git clean -f <path>
+// for a specified path
+
+git clean -df
+// subdir also
+
+git clean -xf
+// ignores also
+
+
+
+

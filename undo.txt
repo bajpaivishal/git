@@ -1,0 +1,16 @@
+## DELETE HISTORY
+
+* git commit --amend
+## remove last commit and make new commit
+## That will drop you into your text exitor and let you change the last commit message.
+
+* git commit --amend -m "New commit message"
+re-set last commit msg
+
+* git commit --amend -C HEAD
+or
+* git commit --amend --no-edit
+To amend the previous commit and keep the same log message, run
+
+
+

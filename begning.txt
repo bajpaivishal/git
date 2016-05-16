@@ -1,0 +1,110 @@
+* two way to start git
+1) git init
+2) git clone url <optioanl-dirname>
+
+* git status
+-s, --short           show status concisely
+-b, --branch          show branch information
+--ignored             show ignored files
+
+* git add
+-n, --dry-run         dry run
+-i, --interactive     interactive picking
+-p, --patch           select hunks interactively
+-e, --edit            edit current diff and apply
+-A, --all             add changes from all tracked and untracked files
+
+* get ls-files
+list of tracked files
+
+* git rm --cached <file>
+to unstage a file
+
+* git rm  <file>
+to unstage a file & also delete it from working tree
+
+* git mv file_from file_to
+
+* git commit -am "first commit msg"
+
+//////////////////////
+* git diff filename
+local & index
+
+* git diff HEAD filename
+local & HEAD
+
+* git diff --cached filename / git diff --staged filename
+index & HEAD
+///////////////////////
+
+<<<<<<< HEAD
+* git checkout .
+copy all files from index to CWD
+### WITHOUT ANY CONFILICT & WRNING (not added & not commited data of working dir will be never recover)
+
+
+* git checkout HEAD .
+copy all files from HEAD to working dir without made chnage in index
+=======
+* git checkout HEAD .
+copy all files from HEAD to index & working dir 
+>>>>>>> 12bec809471e3a8faccced9b042a7349dbeb87af
+### WITHOUT ANY CONFILICT & WRNING (not added & not commited data of working dir will be never recover)
+
+* git commit -m "del"
+after remove file from tracking aria u need to make a commit for delete it form HEAD
+
+* get reset HEAD~n
+--mixed               reset HEAD and index
+--soft                reset only HEAD
+--hard                reset HEAD, index and working tree
+--merge               reset HEAD, index and working tree
+--keep                reset HEAD but keep local changes
+## find HEAD or hash sh1 OF "del" commit , from "git log --oneline" or "git reflog"
+## Dangorous command it will remove ur history, DONT USE IT AFTER PUSH COMMAND
+
+
+* .gitignore 
+	*.[oa]
+	*~
+ignore any files ending in “.o” or “.a” or "~"
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+# ignore all files in the build/ directory
+build/
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+
+
+
+
+Command	Scope	Common use cases
+git reset	Commit-level	Discard commits in a private branch or throw away uncommited changes
+git reset	File-level	Unstage a file
+git checkout	Commit-level	Switch between branches or inspect old snapshots
+git checkout	File-level	Discard changes in the working directory
+git revert	Commit-level	Undo commits in a public branch
+git revert	File-level	(N/A)
+
+
+git checkout -- . will obviously only work on the current directory (and subdirectories thereof), git reset --hard will operate on the complete working tree.
+
+git checkout -- . will only update the working tree and leave already staged files as is, whereas git reset --hard will match index and working tree with the HEAD commit.
+
+when used with a refspec:
+
+reset will set the current branch head to the given commit (and matches index and working tree)
+checkout will switch to that branch, leaving local changes intact, when they touch files which did not change between the current branch and the branch to be checked out
+
+
+
+
+
+
+
+
+
