@@ -1,0 +1,52 @@
+* git clone url dirname-optional
+
+* git remote
+show ur added remote
+
+-v will show u shortname & url & push/fetch
+
+* git fetch myorigin
+# fetch all history that u dont have in ur current repo
+# updated commit history will not appear in working tree & u need to merge for see updated history in ur wroking tree.
+# pull = fetch + merge
+
+* git push origin master
+
+* git remote show origin
+Inspecting a remote
+
+* git remote rename old_origin_name new_origin_name
+# Removing and Renaming Remotes
+
+////////
+* git tag tag_name
+create tag
+
+* git tag
+list of all tags
+
+* git show v1.2
+show detail of a tag
+
+* git push origin v1.5
+push a tag to server
+
+* git checkout -b version2 v2.0.0
+# Switched to a new branch 'version2'
+# hecking out Tags
+//////////////////////////
+
+Alais
+* git config --global alias.br branch
+* git config --global alias.st status
+* git config --global alias.ci commit
+* git config --global alias.co checkout
+
+
+
+
+
+
+
+
+
