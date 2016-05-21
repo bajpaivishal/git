@@ -38,7 +38,6 @@ local & HEAD
 index & HEAD
 ///////////////////////
 
-<<<<<<< HEAD
 * git checkout .
 copy all files from index to CWD
 ### WITHOUT ANY CONFILICT & WRNING (not added & not commited data of working dir will be never recover)
