@@ -45,11 +45,7 @@ copy all files from index to CWD
 
 
 * git checkout HEAD .
-copy all files from HEAD to working dir without made chnage in index
-=======
-* git checkout HEAD .
 copy all files from HEAD to index & working dir 
->>>>>>> 12bec809471e3a8faccced9b042a7349dbeb87af
 ### WITHOUT ANY CONFILICT & WRNING (not added & not commited data of working dir will be never recover)
 
 * git commit -m "del"
